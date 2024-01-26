@@ -39,8 +39,8 @@
   <script>
   function demanderNomMotDePasse() {
   // Déclaration des variables
-  var nom = prompt("Nom du compte");
-  var motDePasse = prompt("Mot de passe");
+  var nom = prompt("Entrez votre nom");
+  var motDePasse = prompt("Entrez votre mot de passe");
 
   // Vérification des données saisies
   if (nom === null || motDePasse === null) {
@@ -48,20 +48,21 @@
     alert("Veuillez saisir votre nom et votre mot de passe");
   } else if (nom === "" || motDePasse === "") {
     // L'utilisateur a saisi une valeur vide
-    alert("Veuillez saisir votre nom et un mot de passe non vides");
+    alert("Veuillez saisir un nom et un mot de passe non vides");
   } else {
     // Les données saisies sont valides
     // Vérification des noms et mots de passe prévus
-    if (nom === "Felicien" && motDePasse === "165243")  {
+    if (nom === "admin" && motDePasse === "123456") {
       // Les noms et mots de passe correspondent
       // Ouvrir la page web
-      window.location.href = "Felicien.html";
+      window.location.href = "page-protegee.html";
     } else {
       // Les noms et mots de passe ne correspondent pas
       alert("Nom ou mot de passe incorrect");
     }
   }
 }
+
   </script>
 </head>
 
