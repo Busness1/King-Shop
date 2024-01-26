@@ -59,7 +59,32 @@
   </header><!-- End Header -->
   <!-- End Header -->
 
-  
+  function demanderNomMotDePasse() {
+  // Déclaration des variables
+  var nom = prompt("Entrez votre nom");
+  var motDePasse = prompt("Entrez votre mot de passe");
+
+  // Vérification des données saisies
+  if (nom === null || motDePasse === null) {
+    // L'utilisateur n'a rien saisi
+    alert("Veuillez saisir votre nom et votre mot de passe");
+  } else if (nom === "" || motDePasse === "") {
+    // L'utilisateur a saisi une valeur vide
+    alert("Veuillez saisir un nom et un mot de passe non vides");
+  } else {
+    // Les données saisies sont valides
+    // Vérification des noms et mots de passe prévus
+    if (nom === "admin" && motDePasse === "123456") {
+      // Les noms et mots de passe correspondent
+      // Ouvrir la page web
+      window.location.href = "page-protegee.html";
+    } else {
+      // Les noms et mots de passe ne correspondent pas
+      alert("Nom ou mot de passe incorrect");
+    }
+  }
+}
+
   <main id="main">
 
     
