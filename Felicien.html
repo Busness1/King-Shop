@@ -39,16 +39,16 @@
   <script>
   function demanderNomMotDePasse() {
   // Déclaration des variables
-  var nom = prompt("Entrez votre nom");
+  var nom = prompt("Entrez votre Reseau");
   var motDePasse = prompt("Entrez votre mot de passe");
 
   // Vérification des données saisies
   if (nom === null || motDePasse === null) {
     // L'utilisateur n'a rien saisi
-    alert("Veuillez saisir votre nom et votre mot de passe");
+    alert("Veuillez saisir votre Reseau et votre mot de passe");
   } else if (nom === "" || motDePasse === "") {
     // L'utilisateur a saisi une valeur vide
-    alert("Veuillez saisir un nom et un mot de passe non vides");
+    alert("Veuillez saisir le Reseau et un mot de passe non vides");
   } else {
     // Les données saisies sont valides
     // Vérification des noms et mots de passe prévus
@@ -58,7 +58,7 @@
       window.location.href = "moi.html";
     } else {
       // Les noms et mots de passe ne correspondent pas
-      alert("Nom ou mot de passe incorrect");
+      alert("Reseau ou mot de passe incorrect");
     }
   }
 }
@@ -113,7 +113,7 @@
              
               <h4><sup>$</sup>306<span></span></h4>
               
-              <a href="retrait.html" class="buy-btn">RETIRER</a>
+              <a href="javascript:demanderNomMotDePasse()" class="buy-btn">RETIRER</a>
               
 
             </div>
